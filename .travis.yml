@@ -1,0 +1,17 @@
+language: go
+
+go:
+  - "1.5"
+
+install:
+  - go get -u -v github.com/spf13/hugo
+  - git clone --depth 1 --recursive https://github.com/spf13/hugoThemes.git themes
+
+deploy:
+  provider: s3
+  access_key_id: NOPE
+  secret_access_key: NOPE
+  bucket: "barclay.io"
+  local_dir: public
+  skip_cleanup: true
+  region: ap-southeast-2
