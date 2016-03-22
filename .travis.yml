@@ -5,7 +5,7 @@ go:
 
 install:
   - go get -u -v github.com/spf13/hugo
-  - git clone --depth 1 --recursive https://github.com/spf13/hugoThemes.git themes
+  - git clone --depth 1 https://github.com/spf13/hyde.git themes/hyde
 
 deploy:
   provider: s3
