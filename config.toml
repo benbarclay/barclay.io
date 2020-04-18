@@ -1,4 +1,4 @@
-baseurl = "http://barclay.io/"
+baseurl = "https://barclay.io/"
 languageCode = "en-us"
 title = "Ben Barclay"
 theme = "hyde"
