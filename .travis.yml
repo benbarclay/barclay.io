@@ -4,7 +4,8 @@ go:
   - "1.5"
 
 install:
-  - go get -u -v github.com/spf13/hugo
+  - wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE}/hugo_extended_${HUGO_RELEASE}_Linux-64bit.deb"
+  - sudo dpkg -i hugo*.deb
   - git clone --depth 1 https://github.com/spf13/hyde.git themes/hyde
 
 deploy:
@@ -15,3 +16,7 @@ deploy:
   local_dir: public
   skip_cleanup: true
   region: ap-southeast-2
+
+env:
+  global:
+    - HUGO_RELEASE=0.68.3
