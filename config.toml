@@ -1,5 +1,6 @@
 baseurl = "http://barclay.io/"
 languageCode = "en-us"
 title = "Ben Barclay"
+theme = "hyde"
 [params]
   description = " "
