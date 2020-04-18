@@ -1,7 +1,7 @@
 backend:
         name: barclay.io
         branch: master
-        media_folder: "static"
+media_folder: "static"
 collections:
         - name: ""
           label: "Blog"
