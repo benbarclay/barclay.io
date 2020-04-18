@@ -1,5 +1,5 @@
 backend:
-        name: barclay.io
+        name: github
         repo: benbarclay/barclay.io
         branch: master
 media_folder: "static"
